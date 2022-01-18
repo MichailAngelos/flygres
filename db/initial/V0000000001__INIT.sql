@@ -34,11 +34,11 @@ create table electronify.product (
     name varchar(50) not null,
     brand varchar(50) not null,
     price decimal not null,
-    on_sale boolean default false not null
-    in_stock boolean default true not null
+    on_sale boolean default false not null,
+    in_stock boolean default true not null,
     created_at timestamp not null,
-    constraint category_id foreign key (id) references electronify.product_category(id)
-    constraint stock_id foreign key (id) references electronify.product_stock(id)
+    constraint category_id foreign key (id) references electronify.product_category(id),
+    constraint stock_id foreign key (id) references electronify.product_stock(id),
     constraint sale_id foreign key (id) references electronify.product_sale(id)
 );
 

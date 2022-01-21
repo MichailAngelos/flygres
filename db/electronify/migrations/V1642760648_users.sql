@@ -10,3 +10,6 @@ UPDATE electronify.users SET password = '45c48cce2e2d7fbdea1afc51c7c6ad26' WHERE
 UPDATE electronify.users SET password = 'd3d9446802a44259755d38e6d163e820' WHERE id = 10;
 
 alter table electronify.product_sale add constraint product_id foreign key (id) references electronify.product(id);
+
+UPDATE electronify.users SET active = false WHERE id = 8;
+UPDATE electronify.users SET active = false WHERE id = 9;

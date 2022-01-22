@@ -1,6 +1,6 @@
 
  create table electronify.users (
-	id UUID not null constraint users_pk primary key,
+	id varchar(50) not null constraint users_pk primary key,
 	username varchar(50) not null,
 	password varchar(50) not null,
 	email varchar(50) not null,

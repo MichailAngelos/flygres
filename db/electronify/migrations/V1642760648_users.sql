@@ -15,3 +15,20 @@ UPDATE electronify.users SET active = false WHERE id = '1a5aedd3-2a39-4149-9eaa-
 UPDATE electronify.users SET active = false WHERE id = '263a627b-2950-42ab-aea0-31e70e551b91';
 
 select * from electronify.users;
+
+alter table electronify.users add constraint product_id foreign key (id) references electronify.product(id);
+
+alter table electronify.users
+ALTER COLUMN created_at TYPE VARCHAR(200);
+
+alter table electronify.users
+ALTER COLUMN id TYPE VARCHAR(50);
+
+alter table electronify.users
+    ALTER COLUMN username TYPE VARCHAR(50);
+
+alter table electronify.users
+    ALTER COLUMN password TYPE VARCHAR(200);
+
+
+

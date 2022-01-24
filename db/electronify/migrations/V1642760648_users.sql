@@ -9,14 +9,8 @@ UPDATE electronify.users SET password = 'c9f0f895fb98ab9159f51fd0297e236d' WHERE
 UPDATE electronify.users SET password = '45c48cce2e2d7fbdea1afc51c7c6ad26' WHERE id = '1a5aedd3-2a39-4149-9eaa-c330f22fec54';
 UPDATE electronify.users SET password = 'd3d9446802a44259755d38e6d163e820' WHERE id = 'e1813cb1-350e-4602-85dd-12c072e37658';
 
-alter table electronify.product_sale add constraint product_id foreign key (id) references electronify.product(id);
-
 UPDATE electronify.users SET active = false WHERE id = '1a5aedd3-2a39-4149-9eaa-c330f22fec54';
 UPDATE electronify.users SET active = false WHERE id = '263a627b-2950-42ab-aea0-31e70e551b91';
-
-select * from electronify.users;
-
-alter table electronify.users add constraint product_id foreign key (id) references electronify.product(id);
 
 alter table electronify.users
 ALTER COLUMN created_at TYPE VARCHAR(200);

@@ -9,3 +9,7 @@ ALTER TABLE electronify.cart
 
 -- ALTER TABLE electronify.cart
 --     drop column product_id;
+
+update electronify.product set stock = 5, in_stock = false where id = 'f693ca8e-802a-4303-9dc4-f1fecab0e4c9';
+
+select name,stock,in_stock from electronify.product where id = 'f693ca8e-802a-4303-9dc4-f1fecab0e4c9';
